@@ -13,19 +13,19 @@ def nyc_pigeon_organizer(data)
 
   data[:color].each do |key, hash|
     if hash.detect {|name| name == names[i]}
-      color_matrix.push(key.to_str)
+      color_matrix.push(key.to_s)
     end
   end
 
   data[:gender].each do |key, hash|
     if hash.detect {|name| name == names[i]}
-      gender_matrix.push(key.to_str)
+      gender_matrix.push(key.to_s)
     end
   end
 
   data[:lives].each do |key, hash|
     if hash.detect {|name| name == names[i]}
-      lives_matrix.push(key.to_str)
+      lives_matrix.push(key.to_s)
     end
   end
 
