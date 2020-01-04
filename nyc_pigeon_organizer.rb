@@ -1,12 +1,38 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
+  %create list of names
   names = data[:color].values.flatten.uniq
-  puts names
-
-
+  num_names = names.length
+  i=0
   #find out the color
-  #data[:color].each do |key, hash|
-  #  hash.detect {|name|
+  while i < num_names
+    color_matrix = [];
+    gender_matrix = [];
+    lives_matrix = [];
+    
+  data[:color].each do |key, hash|
+    if hash.detect {|name| name == names[i]}
+      color_matrix.push(key.to_str)
+    end
+  end
+
+  data[:gender].each do |key, hash|
+    if hash.detect {|name| name == names[i]}
+      color_matrix.push(key.to_str)
+    end
+  end
+
+  data[:gender].each do |key, hash|
+    if hash.detect {|name| name == names[i]}
+      color_matrix.push(key.to_str)
+    end
+  end
+
+  
+    
+
+
+    
 
 
 end
