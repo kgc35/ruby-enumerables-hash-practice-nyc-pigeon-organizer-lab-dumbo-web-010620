@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  names = data[:color].values.flatten
+  names = data[:color].values.flatten.uniq
   puts names
 
 
