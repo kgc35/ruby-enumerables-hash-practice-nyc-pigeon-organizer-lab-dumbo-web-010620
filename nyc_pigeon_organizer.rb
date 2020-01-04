@@ -30,7 +30,7 @@ def nyc_pigeon_organizer(data)
   end
 
 #construct new hash
-pigeon_list[names[i].to_str] = {:color => color_matrix, :gender => gender_matrix, :lives => lives}
+pigeon_list[names[i].to_str] = {:color => color_matrix, :gender => gender_matrix, :lives => lives_matrix}
 
 i += 1
 end
