@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
-  %create list of names
+  #create list of names
   names = data[:color].values.flatten.uniq
   num_names = names.length
   i=0
