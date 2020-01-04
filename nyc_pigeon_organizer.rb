@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
     color_matrix = [];
     gender_matrix = [];
     lives_matrix = [];
-    
+
   data[:color].each do |key, hash|
     if hash.detect {|name| name == names[i]}
       color_matrix.push(key.to_str)
@@ -34,7 +34,7 @@ pigeon_list[names[i].to_str] = {:color => color_matrix, :gender => gender_matrix
 
 i += 1
 end
-  
+
 pigeon_list
 
 end
